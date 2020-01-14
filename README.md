@@ -45,3 +45,18 @@ As a database
 So no one else can manage my bookmarks
 Users are restricted to manage only their own bookmarks
 ```
+Setting up a database
+1. Connect to `psql`
+2. Create the database using the `psql` command `CREATE DATABASE bookmark_manager;`
+3. Connect to the database using the `pqsl` command `\c bookmark_manager;`
+4. Run the query we have saved in the file `01_create_bookmarks_table.sql`
+
+### To set up the database
+
+Connect to `psql` and create the `bookmark_manager` database:
+
+```
+CREATE DATABASE bookmark_manager;
+```
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
